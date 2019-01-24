@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.271
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineTedris", "OnlineTedris\OnlineTedris.csproj", "{C3AD75F0-EE35-490A-9FCA-8F38E7EBE6CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C3AD75F0-EE35-490A-9FCA-8F38E7EBE6CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3AD75F0-EE35-490A-9FCA-8F38E7EBE6CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3AD75F0-EE35-490A-9FCA-8F38E7EBE6CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3AD75F0-EE35-490A-9FCA-8F38E7EBE6CC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {53F702F9-E8FE-41A8-8B1A-37E7DBB63D56}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://desktop-ldi39h9:8080/tfs/onlinetedris
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = OnlineTedris\\OnlineTedris.csproj
+		SccProjectName1 = OnlineTedris
+		SccLocalPath1 = OnlineTedris
+	EndGlobalSection
+EndGlobal
