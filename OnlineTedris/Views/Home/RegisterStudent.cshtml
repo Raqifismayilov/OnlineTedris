@@ -1,0 +1,129 @@
+﻿
+@{
+    ViewBag.Title = "RegisterStudent";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using (Html.BeginForm("", "", FormMethod.Post))
+{
+
+}
+<section class="tz-wrapper-default">
+    <div class="tz-joom-title">
+        <img src="~/demos/check.png" alt="Image">
+        <h1><a href="#">Tələbələrin Qeydiyyatı</a></h1>
+        <span>Check more about our activities</span>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                <div class="tz-link-widget">
+                    <aside class="widget">
+                        <form method="get" id="searchform" class="tz-bog-search" action="#">
+                            <input type="text" name="s" id="s" placeholder="Search by word">
+                            <label class="fa fa-search">&nbsp;</label>
+                        </form>
+                    </aside>
+                    <aside class="widget widget-link">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img alt="Images" src="~/demos/check.png">
+                                    <i class="fa fa-arrows-alt"></i>
+                                    <strong>Log In Form</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img alt="Images" src="~/demos/check.png">
+                                    <i class="fa fa-arrows-alt"></i>
+                                    <strong>Register Form</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img alt="Images" src="~/demos/check.png">
+                                    <i class="fa fa-arrows-alt"></i>
+                                    <strong>Remind User</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img alt="Images" src="~/demos/check.png">
+                                    <i class="fa fa-arrows-alt"></i>
+                                    <strong>Reset Pass</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img alt="Images" src="~/demos/check.png">
+                                    <i class="fa fa-arrows-alt"></i>
+                                    <strong>Edit User Profile</strong>
+                                </a>
+                            </li>
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                <div class="joom-register">
+                    <h4 class="joom-title"><img src="~/demos/check.png" alt="Images">Qeydİyyat</h4>
+                    <p>I am a returning customer</p>
+                    <form class="form-register tz-joomla-register">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <h4 class="details-title">SİZİN ŞƏXSİ MƏLUMATLARINIZ</h4>
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                        <label>Ad: *</label>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                        <input type="text" value="" name="first">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                        <label>Soyad: *</label>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                        <input type="text" value="" name="last">
+                                    </div>
+                                </div>
+                               
+                               
+                                <div class="form-ds"><input type="checkbox" class="chk_register"> I have read and agree to the Privacy Policy </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <h4 class="details-title">ƏLAQƏ</h4>
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                        <label>E-Mail: *</label>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                        <input type="email" value="" name="email">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                        <label>Telephone: *</label>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                        <input type="text" value="" name="telephone">
+                                    </div>
+                                </div>
+
+
+                                <div class="controls">
+                                    <button type="submit"><i class="fa fa-arrows-alt"></i>TƏSDİQ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end class row-->
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
