@@ -29,11 +29,6 @@ namespace OnlineTedris.Controllers
 
             return View();
         }
-        public ActionResult RegisterStudent()
-        {
-            ViewBag.Message = "Register page.";
-
-            return View();
-        }
+       
     }
 }
