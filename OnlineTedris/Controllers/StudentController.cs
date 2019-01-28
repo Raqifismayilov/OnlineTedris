@@ -14,7 +14,6 @@ namespace OnlineTedris.Controllers
         DbTraining dbTraining = new DbTraining();
         public ActionResult Index()
         {
-            Telebe telebe = new Telebe();
             return View();
         }
         
@@ -25,7 +24,7 @@ namespace OnlineTedris.Controllers
                 dbTraining.Telebes.Add(telebe);
             }
             dbTraining.SaveChanges();
-            return View(); 
+            return RedirectToAction("Index"); 
         }
     }
 }
