@@ -3,21 +3,29 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using OnlineTedris.Context;
+using OnlineTedris.Models.DbModels;
 
 namespace OnlineTedris.Controllers
 {
     public class StudentController : Controller
     {
         // GET: Student
+        DbTraining dbTraining = new DbTraining();
         public ActionResult Index()
         {
+            Telebe telebe = new Telebe();
             return View();
         }
-        public ActionResult RegisterStudent()
+        
+        public ActionResult RegisterStudent(Telebe telebe)
         {
-            ViewBag.Message = "Register page.";
-
-            return View();
+            if(telebe.ID==0)
+            {
+                dbTraining.Telebes.Add(telebe);
+            }
+            dbTraining.SaveChanges();
+            return View(); 
         }
     }
 }
