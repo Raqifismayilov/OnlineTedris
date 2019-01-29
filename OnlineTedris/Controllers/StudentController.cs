@@ -16,7 +16,7 @@ namespace OnlineTedris.Controllers
         {
             return View();
         }
-        
+        [HttpPost]
         public ActionResult RegisterStudent(Telebe telebe)
         {
             if(telebe.ID==0)

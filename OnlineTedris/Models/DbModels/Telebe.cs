@@ -10,9 +10,14 @@ namespace OnlineTedris.Models.DbModels
     public class Telebe
     {
         public int ID { get; set; }
+        [Required]
+        [EmailAddress(ErrorMessage = "Email Address Səhvdir")]
         public string Email { get; set; }
+        [Required]
         public string Shifre { get; set; }
+        [Required]
         public string Soyadi { get; set; }
+        [Required]
         public string Adi { get; set; }
         public string Ata_adi { get; set; }
         public Nullable<bool> Cins { get; set; }

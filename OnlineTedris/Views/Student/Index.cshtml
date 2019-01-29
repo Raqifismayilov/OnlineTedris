@@ -71,6 +71,8 @@
 
                     @using (Html.BeginForm("RegisterStudent", "Student", FormMethod.Post, new { @class = "form-register tz-joomla-register" }))
                     {
+                        @Html.AntiForgeryToken() //Link ile gelende emeliyyet yerine yetirmir
+                        @Html.ValidationSummary() <!-- Validation ucun nezerde tutulub hamisini bir mesaj kimi verir -->
                         <div class="row">
                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                 <h4 class="details-title">SİZİN ŞƏXSİ MƏLUMATLARINIZ</h4>
@@ -102,6 +104,7 @@
                                     </div>
                                     <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
                                         @Html.TextBoxFor(m => m.Email)
+                                        @Html.ValidationMessageFor(m=>m.Email)
                                     </div>
                                 </div>
                                 <div class="row">
@@ -109,7 +112,7 @@
                                         @Html.LabelFor(m => m.Shifre)
                                     </div>
                                     <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                                        @Html.TextBoxFor(m => m.Shifre)
+                                        @Html.PasswordFor(m => m.Shifre)
                                     </div>
                                 </div>
                                 <div class="controls">
