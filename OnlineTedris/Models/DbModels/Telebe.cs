@@ -20,7 +20,7 @@ namespace OnlineTedris.Models.DbModels
         [Required]
         public string Adi { get; set; }
         public string Ata_adi { get; set; }
-        public Nullable<bool> Cins { get; set; }
+        public bool? Cins { get; set; }
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         public DateTime? Tevellud { get; set; }

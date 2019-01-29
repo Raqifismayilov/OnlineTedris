@@ -82,6 +82,7 @@
                                     </div>
                                     <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
                                         @Html.TextBoxFor(m => m.Adi)
+                                        @Html.ValidationMessageFor(m => m.Adi)
                                     </div>
                                 </div>
                                 <div class="row">
@@ -90,6 +91,7 @@
                                     </div>
                                     <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
                                         @Html.TextBoxFor(m => m.Soyadi)
+                                        @Html.ValidationMessageFor(m => m.Soyadi)
                                     </div>
                                 </div>
 
@@ -113,6 +115,7 @@
                                     </div>
                                     <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
                                         @Html.PasswordFor(m => m.Shifre)
+                                        @Html.ValidationMessageFor(m => m.Shifre)
                                     </div>
                                 </div>
                                 <div class="controls">
